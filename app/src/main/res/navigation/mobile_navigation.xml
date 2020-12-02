@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.bagacesatualcance.ui.home.HomeFragment"
+        android:label="Noticias"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_noticiasActivity2"
+            app:destination="@id/noticiasActivity2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.bagacesatualcance.ui.gallery.GalleryFragment"
+        android:label="Sugerencias"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.bagacesatualcance.ui.slideshow.SlideshowFragment"
+        android:label="Enlaces"
+        tools:layout="@layout/fragment_slideshow" />
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.example.bagacesatualcance.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+    <activity
+        android:id="@+id/authActivity"
+        android:name="com.example.bagacesatualcance.AuthActivity"
+        android:label="activity_auth"
+        tools:layout="@layout/activity_auth" />
+    <activity
+        android:id="@+id/sugerenciasActivity"
+        android:name="com.example.bagacesatualcance.ui.gallery.SugerenciasActivity"
+        android:label="activity_sugerencias"
+        tools:layout="@layout/activity_sugerencias" />
+    <activity
+        android:id="@+id/noticiasActivity2"
+        android:name="com.example.bagacesatualcance.ui.home.Crear.NoticiasActivity"
+        android:label="activity_noticias"
+        tools:layout="@layout/activity_noticias" />
+    <activity
+        android:id="@+id/mostrarNoticia"
+        android:name="com.example.bagacesatualcance.ui.home.HomeFragment"
+        android:label="mostrar_noticias"
+        tools:layout="@layout/mostrar_noticias" />
+    <activity
+        android:id="@+id/navDrawer"
+        android:name="com.example.bagacesatualcance.NavDrawer"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+
+</navigation>

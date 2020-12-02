@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "431430533266",
+    "firebase_url": "https://bdbagacesatualcance.firebaseio.com",
+    "project_id": "bdbagacesatualcance",
+    "storage_bucket": "bdbagacesatualcance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431430533266:android:d16ce28b5cff536619264b",
+        "android_client_info": {
+          "package_name": "com.example.bagacesatualcance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431430533266-r2f60kj8nihk7ct5q79o0qm7fbv3n9ji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_sSFozKovO0cNaN5SUj0WCeGxRfOZ0DY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431430533266-r2f60kj8nihk7ct5q79o0qm7fbv3n9ji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

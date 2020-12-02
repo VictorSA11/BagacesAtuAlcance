@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="396dp"
+        android:layout_height="110dp"
+        android:orientation="vertical">
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+
+        <TextView
+            android:id="@+id/mostrar_queja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@color/blue_grey_300"
+            android:text="descripcion"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

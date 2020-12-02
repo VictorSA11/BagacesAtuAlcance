@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/logo_aut"
+    tools:context=".AuthActivity">
+
+    <LinearLayout
+        android:id="@+id/authLayout"
+        android:layout_width="411dp"
+        android:layout_height="714dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@mipmap/logo_esc"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!--        <Space-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="83dp" />-->
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/emailEditText"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint="Correo"-->
+        <!--            android:inputType="textEmailAddress" />-->
+
+        <!--        <Space-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="24dp" />-->
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/passwordEditText"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint="Contraseña"-->
+        <!--            android:inputType="textPassword" />-->
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+        //
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--            <Button-->
+            <!--                android:id="@+id/logOutButton"-->
+            <!--                android:layout_width="149dp"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:background="#80765A"-->
+            <!--                android:text="Registrar"-->
+            <!--                android:textColor="#E0DCEA" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/loginButton"-->
+            <!--                android:layout_width="134dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:background="#505E4D"-->
+            <!--                android:text="acceder"-->
+            <!--                android:textColor="#D8E8D7" />-->
+            //</LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="319dp" />
+
+        <Button
+            android:id="@+id/googleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/com_facebook_button_background_color_disabled"
+            android:drawableStart="@drawable/common_google_signin_btn_icon_light_normal"
+            android:text="Google" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+
+        <Button
+            android:id="@+id/facebookButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AFC0DA"
+            android:drawableStart="@mipmap/faceb"
+            android:text="    FACEBOOK" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

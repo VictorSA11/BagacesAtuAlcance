@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.Crear.NoticiasActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/fondonoticia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="394dp"
+            android:layout_height="721dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="8dp">
+
+
+            <LinearLayout
+                android:layout_width="390dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="0.7"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageButton
+                    android:id="@+id/btnCalendar"
+                    android:layout_width="375dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+                <TextView
+                    android:id="@+id/txtfecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_below="@id/btnCalendar"
+                    android:text="Fecha"
+                    android:textSize="25dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    tools:text="@tools:sample/date/ddmmyy" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="390dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageButton
+                    android:id="@+id/btnCamara"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_weight="0.3"
+                    app:srcCompat="@drawable/ic_menu_camera" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="377dp"
+                    android:layout_height="352dp"
+                    app:srcCompat="@drawable/common_full_open_on_phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.7"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageButton
+                    android:id="@+id/btnLocation"
+                    android:layout_width="378dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+                <TextView
+                    android:id="@+id/txtubicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Su ubicación"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.7"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="8dp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="73dp"
+                        android:id="@+id/txtdescripcion"
+                        android:hint="Agrega una descripción" />
+
+                    <Button
+                        android:id="@+id/btnNuevaNoticia"
+                        android:layout_width="364dp"
+                        android:layout_height="73dp"
+                        android:layout_weight="1"
+                        android:text="Guardar Noticia" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
